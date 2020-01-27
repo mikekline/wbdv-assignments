@@ -13,7 +13,7 @@ header {
   /* back ground image from  https://www.publicdomainpictures.net/en/view-image.php?image=166668&picture=canadian-rockies-moraine-lake */
   background-image: url('../assets/canadian-rockies-moraine-lake.jpg');
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat:no-repeat;
   height: 100vh;
 }

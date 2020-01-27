@@ -1,0 +1,5 @@
+- great use of comments but your css could use more spacing to separate logical groups
+- I love the bear
+- aspect ratio of your mountain image is not preserved. `background-size: cover` solves that problem
+- nice hover effect on the menu arrow but what happens on mobile when there is no hover event?
+- semantically, you should place your navigation higher up in the source
