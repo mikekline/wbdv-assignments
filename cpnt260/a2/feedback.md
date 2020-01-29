@@ -1,0 +1,5 @@
+- Only one column is needed for this design since everything is centred.
+- Your css is well organized but a few blank lines and comments would help with readability.
+- The bold text causes your text to overflow with the social icons on Firefox.
+- Your choice of row sizing could cause problems with different text lengths. I changed it so the text will grow/shrink with the body text.
+- The grid placement of the profile image is non-standard but it seems to work.
