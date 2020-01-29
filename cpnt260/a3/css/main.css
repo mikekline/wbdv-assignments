@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+
+/**********************resets********************/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+legend {
+  font-size: 2em;
+  margin-bottom: .5em;
+  font-weight: 600;
+}
+
+
+
+
+/**********************header********************/
+
+header {
+display: flex;
+justify-content: space-between;
+height: 10vh;
+padding: 0 2em;
+background-color: #50514f;
+color: whitesmoke;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+}
+
+h3 {
+  padding-top: 3vh;
+}
+
+header a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #0a69a9;
+}
+
+
+
+
+/**********************layout********************/
+
+body {
+  background: linear-gradient(315deg, rgba(0,212,255,1) 3%, rgba(93,186,246,1) 69%, rgba(40,229,244,1) 100%);
+}
+
+main {
+ display: flex;
+ height: 90vh;
+}
+
+.formSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  margin: auto;
+  height: 60vh;
+  width: 50vw;
+  background-color: white;
+  box-shadow: 2px 2px 12px 0px #50514f;
+}
+
+.button {
+  padding: .5vh 2.3vw;
+  border-radius: 30px;
+  font-size: 1.1vw;
+  border: 1px solid black;
+  background-color: #5dbaf6;
+}
+
+.button:hover {
+  background-color: #0a69a9;
+}
+
+
+
+
+/**********************login********************/
+
+img {
+  height: 60vh;
+  width: 21vw;
+  mix-blend-mode: normal;
+}
+
+.logo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  position: relative;
+  top: -4em;
+  left: -6em;
+  height: 16vh;
+  width: 16vw;
+  z-index: 1;
+} 
+
+.city {
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+  clip-path: polygon(69% 0, 71% 39%, 79% 49%, 100% 49%, 100% 100%, 85% 100%, 0 100%, 0 0);
+}
+
+.mountains {
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+  justify-self: flex-end;
+  opacity: 0.8;
+  clip-path: polygon(11% 19%, 10% 0, 100% 0, 100% 100%, 0 100%, 2% 82%, 7% 61%, 10% 38%);
+}
+
+.login {
+  display: flex;
+  grid-column: 3 / 3;
+  grid-row: 2 / 3;
+  justify-content: center;
+  align-items: center;
+}
+
+input { 
+  display: block;
+  margin-bottom: .5em;
+  padding: 5px;
+  border: 0;
+  border-bottom: 2px solid rgba(80, 81, 79, 0.2);
+}
+
+.loginButton {
+  display: inline-block;
+  margin: 2em -1em;
+}
+
+
+
+
+/****************registration ********************/
+ 
+.regimage {
+  grid-column: 1 / 4;
+  grid-row: 1 / 4; 
+  width: 50vw;
+}
+
+.reg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+  width: 35vw;
+  background-color: whitesmoke;
+  align-items: center;
+}
+
+.reg legend {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1; 
+  justify-self: center;
+}
+
+.reg input {
+  border-bottom: 0;
+  box-shadow: 2px 2px 2px #50514f;
+}
+
+h2 {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1; 
+  margin-left: 1vw;
+}
+
+small {
+  color:red;
+}
+
+.regForm {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3; 
+  justify-self: flex-end;
+}
+
+.regForm2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3; 
+  justify-self: center;
+}
+
+#profilePic {
+  box-shadow: 0 0 0;
+}
+
+#regButton {
+  grid-column: 1 / 3;
+  grid-row: 2 / 2;
+  justify-self: center;
+  border: 1px solid black;
+  background-color: #5dbaf6;
+}
+
+#regButton:hover {
+  background-color: #0a69a9;
+}
+
+
+
+
+
+/****************media queries for smaller devices********************/
+
+
+@media only screen and (max-width: 1360px) {
+  
+  /**************header and Login for smaller devices****************/
+
+  h1 {
+    font-size: 1em;
+  }
+
+  h3 {
+    margin-right: 8vw;
+    padding-top: 1vh;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  .logo {
+    top: -8vh;
+    left: -8vw;
+    width: 32vw;
+  } 
+  
+  .mountains, .city{
+    display: none;
+  }
+
+  .formSection {
+    height: 80vh;
+    width: 80vw;
+  }
+
+  .login {
+    grid-column: 1 / 3;
+    align-items: flex-start;
+  }
+
+  .button {
+    padding: .5em;
+    border-radius: 30px;
+    font-size: 1.2em;
+    border: 1px solid black;
+    background-color: #5dbaf6;
+  }
+
+  .loginButton {
+    margin: 2em 0em;
+  }
+
+  /**************register for smaller devices****************/
+
+  .regimage {
+    display:none;
+  }
+
+  .reg {
+    display: block;
+    width: 80vw;
+    background-color: white;
+    align-items: center;
+  }
+
+  #regButton {
+    margin: 2em auto;
+  }
+}

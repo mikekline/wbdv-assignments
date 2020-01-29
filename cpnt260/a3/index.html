@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>CPNT260 Assignment 3 Login</title>
+</head>
+<body>
+  <header>
+    <h1>City to the Mountains in a day</h1>
+    <h3><a href="index.html">Login</a> / <a href="html/register.html">Register</a></h3>
+  </header>
+  <main>
+    <section class="formSection">
+      <!-- logo from http://clipart-library.com/clip-art/mountains-clipart-transparent-background-2.htm -->
+      <!-- all other photos by me -->
+      <img class="logo" src="assets/mountains-clipart-transparent-background-2.png" alt="mountain logo">
+      <img class="city" src="assets/IMG_5857.jpg" alt="buildings of downtown calgary">
+      <img class="mountains" src="assets/IMG_0050.jpg" alt="on a lake in the mountains">
+      <form class="login" action="#"  method="post">
+        <fieldset>
+          <legend>Login</legend>
+          <label for="loginName">User name:</label>
+          <input type="text" name="loginName" id="loginName" required minlength="8" maxlength="20">
+
+          <label for="loginPass">Password:</label>
+          <input type="password" name="loginPass" id="loginPass" required minlength="4" maxlength="12">
+          
+          <input class="button loginButton " type="submit" value="Login">
+         <input class="button loginButton" onclick="window.location.href = 'html/register.html';" type="button" value="Register">
+        </fieldset>
+      </form>
+    </section>
+  </main> 
+</body>
+</html>
