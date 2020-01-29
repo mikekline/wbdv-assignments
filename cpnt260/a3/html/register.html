@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>CPNT260 Assignment 3 Registration</title>
+</head>
+<body>
+  <header>
+    <h1>City to the Mountains in a day</h1>
+    <h3><a href="../index.html">Login</a> / <a href="register.html">Register</a></h3>
+  </header>
+  <main>
+    <section class="formSection">
+      <img class="regimage" src="../assets/IMG_20140703_181824.jpg"  alt="cabin on a small lake in the woods">
+      <form class="reg" action="#"  method="post" enctype="multipart/form-data">
+        <h2>Registration</h2>
+        <fieldset class="regForm">
+          
+          <label for="regUserName">User Name:</label>
+          <input type="text" name="regUserName" id="regUserName" required minlength="8" maxlength="25" size="25" placeholder="8-20 characters">
+          
+          <label for="regEmail">Email:</label>
+          <input type="email" name="regEmail" id="regEmail" required size="25">
+          
+          <label for="regPhone">Phone Number:</label>
+          <input type="tel" name="regPhone" id="regPhone" size="25" placeholder="888-888-8888">
+        
+        </fieldset>
+        <fieldset class="regForm2">
+          
+          <label for="regPass">Password:<small> must include numbers</small></label>
+          <input type="password" name="regPass" id="regPass" required minlength="4" maxlength="12" size="25" placeholder="4-12 characters">
+          
+          <label for="regConfirm">Confirm Password:</label>
+          <input type="password" name="regConfirm" id="regConfirm" required minlength="4" maxlength="12" size="25" placeholder="re-enter password">
+                    
+          <label for="profilePic">Upload your profile picture: </label>
+          <input id="profilePic" type="file" name="profilePic" >
+        
+        </fieldset> 
+        <input id="regButton" class="button" type="submit" value="Register">
+      </form>
+    </section>
+  </main>
+</body>
+</html>
