@@ -26,7 +26,7 @@ ul {
 
 
 
-/*********************************nav and header*******************************/
+/*********************************navbar with links for internal page and header with hero section *******************************/
 
 nav {
   position: fixed;
@@ -109,7 +109,7 @@ header {
 
 
 
-/*********************************main*******************************/
+/*********************************main section of webpage*******************************/
 
 main {
  margin-top: 30vh;
@@ -142,7 +142,7 @@ p {
 
 
 
-/********** the journey and gallery cards********/
+/********** the journey and gallery cards layout********/
 .cardContainer {
   display:flex;
   flex-direction: row;
@@ -285,7 +285,7 @@ footer a {
 
 
 
-/*********************************mobile*******************************/
+/*********************************responisive for mobile*******************************/
 
 
 @media only screen and (max-width: 600px) {
